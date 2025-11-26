@@ -1,24 +1,24 @@
 /*DEVELOPER: Kimberly Corpuz, IS117-001, Fall 2025*/
 
 .calendar-container {
-    max-width: 250px;
-    margin: 5px auto;
-    padding: 0 5px;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 15px;
     flex-grow: 1;
 }
 
 .day-header {
     font-weight: bold;
-    color: white;
+    color: #c9d1d9; 
     padding: 5px 0;
     text-align: center;
-    font-size: 0.85em; /
+    font-size: 0.9em;
 }
 
 .calendar-grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 5px; /* Reduced gap between days */
+    gap: 5px;
 }
 
 .day-box {
@@ -28,9 +28,9 @@
 
     aspect-ratio: 1 / 1;
     padding: 3px;
-    font-size: 0.75rem;
     overflow: hidden;
     color: #8b949e;
+    position: relative; 
 
     transition: transform 0.2s, box-shadow 0.5s, border-color 0.5s;
     cursor: pointer;
@@ -49,7 +49,8 @@
     font-weight: bold;
     color: #c9d1d9;
     z-index: 2;
-    font-size: 1em;
+    font-size: 1em; 
+}
 
 .day-entry {
     background-size: cover;
@@ -78,5 +79,5 @@
 
 .day-box:hover .play-icon {
     opacity: 1;
-    color: white;
+    color: white; 
 }
